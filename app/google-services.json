@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "746758048700",
+    "firebase_url": "https://fir-test-55ef1-default-rtdb.firebaseio.com",
+    "project_id": "fir-test-55ef1",
+    "storage_bucket": "fir-test-55ef1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746758048700:android:e723d8e25065db090eb9b9",
+        "android_client_info": {
+          "package_name": "com.pet.foundation.taskfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnNygq4XxxageqKzUw2MJBxF2LlojXivY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
