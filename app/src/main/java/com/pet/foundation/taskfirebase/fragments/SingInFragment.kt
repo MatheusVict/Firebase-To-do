@@ -44,6 +44,7 @@ class SingInFragment : Fragment() {
             val password = binding.passEt.text.toString().trim()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
+                binding.progressBar.visibility = View.VISIBLE
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(OnCompleteListener {
                         if (it.isSuccessful) {
@@ -60,7 +61,11 @@ class SingInFragment : Fragment() {
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
+                        binding.progressBar.visibility = View.GONE
                     })
+            } else {
+                Toast.makeText(requireContext(), "Please fill all fields", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
     }
